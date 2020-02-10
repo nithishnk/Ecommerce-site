@@ -2,6 +2,9 @@
   --mainBlue: #2a2a72;
   --mainWhite: #f3f3f3;
   --mainDark: #232528; 
+  --mainYellow: #ffa400;
+  --lightBlue: #009ffd;
+  
 }
 body{
   background: var(--mainWhite) !important;

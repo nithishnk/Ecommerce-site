@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
+import logo from "../../src/logo.svg";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -20,7 +20,12 @@ export default class NavBar extends Component {
       <div>
         <nav className="navbar navbar-expand-sm bg-secondary navbar-dark px-sm-5 ">
           <Link to="/">
-            <img src={logo}></img>
+            <img
+              src={logo}
+              alt="logo"
+              className="img-fluid"
+              style={{ height: "3rem" }}
+            ></img>
           </Link>
           <ul className="navbar-nav align-item-center ">
             <li className="nav-item ml-5">
@@ -32,7 +37,7 @@ export default class NavBar extends Component {
               <Link to="/Cart">
                 <ButtonContainer className="">
                   <span className="mr-2">
-                    <i className="fas fa-cart-plus" />
+                    <i className="fa fa-cart-plus" />
                   </span>
                   My Cart
                 </ButtonContainer>
